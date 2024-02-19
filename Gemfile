@@ -78,3 +78,5 @@ gem "tailwindcss-rails", "~> 2.3"
 gem "aws-sdk-s3", require: false
 
 gem 'actiontext'
+
+gem "pagy", "~> 7.0"

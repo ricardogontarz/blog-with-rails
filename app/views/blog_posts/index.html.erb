@@ -1,5 +1,6 @@
 <h1>Blog</h1>
 
+<div>
 <% @blog_posts.each do |blog_post| %>
   <div>
     <h2><%=link_to blog_post.title, blog_post %></h2>
@@ -15,3 +16,8 @@
 
   </div>
 <% end %>
+</div>
+<div class="my-16">
+  <%==pagy_nav(@pagy) %>
+</div>
+
