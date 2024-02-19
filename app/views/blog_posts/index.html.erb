@@ -18,6 +18,7 @@
 <% end %>
 </div>
 <div class="my-16">
-  <%==pagy_nav(@pagy) %>
+  <%if BlogPost.count > 20 %>
+    <%==pagy_nav(@pagy)%>
+  <%end%>
 </div>
-
