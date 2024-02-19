@@ -17,8 +17,8 @@
   </div>
 <% end %>
 </div>
+<%if @pagy.count > @pagy.items %>
 <div class="my-16">
-  <%if BlogPost.count > 20 %>
-    <%==pagy_nav(@pagy)%>
-  <%end%>
+  <%==pagy_nav(@pagy)%>
 </div>
+<%end%>
